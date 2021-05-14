@@ -1,0 +1,36 @@
+.header {
+  width           : 100%;
+  background      : #fbfbfb;
+  display         : flex;
+  flex        : {
+    direction : row;
+    wrap      : nowrap;
+  }
+  justify-content : flex-start;
+  align-items     : center;
+
+  &__logo {
+    display     : flex;
+    flex-shrink : 0;
+    width       : 125px;
+    height      : 115px;
+    object-fit  : cover;
+  }
+
+  &__social {
+    display         : flex;
+    flex-shrink     : 0;
+    color           : #040404;
+    justify-content : space-evenly;
+
+    &-link {
+      padding      : 20px;
+      margin-left : 28px;
+    }
+  }
+
+  &__navigation {
+    display     : flex;
+    margin-left : auto;
+  }
+}

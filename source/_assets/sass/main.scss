@@ -1,0 +1,14 @@
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/a11y-light.css';
+
+// Import the basics
+@import "fonts";
+@import "base";
+
+// Import components
+@import "components/header";
+@import "components/navigation";
+@import "components/content";
+@import "components/text";
+@import "components/docs";

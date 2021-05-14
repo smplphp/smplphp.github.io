@@ -1,0 +1,21 @@
+body, html {
+  margin     : 0;
+  padding    : 0;
+  font     : {
+    family : 'Inter', sans-serif;
+    weight : 400;
+  }
+  height: 100%;
+}
+
+body {
+  &, &.body--light {
+    background : #fbfbfb;
+    color      : #000000;
+  }
+
+  &.body--dark {
+    background : #000000;
+    color      : #fbfbfb;
+  }
+}
