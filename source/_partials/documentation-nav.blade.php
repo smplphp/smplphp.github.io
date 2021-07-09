@@ -5,7 +5,7 @@
            path="{{ $page->getPath() }}" prefix="{{ $nav['prefix'] }}">{{ $title }}</a>
         <div class="nav__items">
             @foreach ($nav['links'] as $title => $path)
-                @if (isset($path['links']))
+                @if (is_array($path))
                     <a href="{{ $path['path'] }}"
                        class="nav__item {{ $page->isActive($path['path'])  ? 'nav__item--active' : '' }}">{{ $title }}</a>
                     <div class="nav__items">
@@ -15,8 +15,8 @@
                         @endforeach
                     </div>
                 @else
-                    <a href="{{ $path['path'] }}"
-                       class="nav__item {{ $page->isActive($path['path'])  ? 'nav__item--active' : '' }}">{{ $title }}</a>
+                    <a href="{{ $path }}"
+                       class="nav__item {{ $page->isActive($path)  ? 'nav__item--active' : '' }}">{{ $title }}</a>
                 @endif
             @endforeach
         </div>

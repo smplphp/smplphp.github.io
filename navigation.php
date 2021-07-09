@@ -12,9 +12,7 @@ return [
         'Components'      => [
             'prefix' => '/docs/current/components',
             'links'  => [
-                'Container' => [
-                    'path'  => '/docs/current/components/container',
-                ],
+                'Container' => '/docs/current/components/container',
                 //'Pipelines'            => '/docs/current/pipelines',
             ],
         ],
