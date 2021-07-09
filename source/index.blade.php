@@ -68,7 +68,8 @@
         <p>
             <strong>Follow</strong>
             on <a href="http://twitter.com/smplphp" target="_blank">twitter</a>
-            for updates
+            for updates.{{--, or <strong>read the</strong>
+            <a href="/docs/current/getting-started">docs</a>--}}
         </p>
     </div>
 </div>

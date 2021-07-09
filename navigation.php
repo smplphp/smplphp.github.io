@@ -1,20 +1,22 @@
 <?php
 
 return [
-    /*'Getting Started' => [
-        'prefix' => '/docs/getting-started',
-        //'url'    => '/docs/getting-started/installation',
-        'links'  => [
-            //'Installation'  => '/docs/getting-started/installation',
-            //'Configuration' => '/docs/getting-started/configuration',
+    'current' => [
+        'Getting Started' => [
+            'prefix' => '/docs/current/getting-started',
+            'links'  => [
+                'Installation' => '/docs/current/getting-started',
+                //'Contributing' => '/docs/current/getting-started/contributing',
+            ],
         ],
-    ],*/
-    'Components'      => [
-        'prefix' => '/docs/components/introduction',
-        'links'  => [
-            'Introduction' => '/docs/components/introduction',
-            'Dependency Injection' => '/docs/components/dependency-injection',
-            'Pipelines'            => '/docs/components/pipelines',
+        'Components'      => [
+            'prefix' => '/docs/current/components',
+            'links'  => [
+                'Container' => [
+                    'path'  => '/docs/current/components/container',
+                ],
+                //'Pipelines'            => '/docs/current/pipelines',
+            ],
         ],
     ],
 ];

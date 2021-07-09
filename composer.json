@@ -1,11 +1,14 @@
 {
-    "require": {
-        "tightenco/jigsaw": "^1.3",
-        "samdark/sitemap": "^2.2.1"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\Listeners\\": "listeners/"
-        }
+  "require": {
+    "tightenco/jigsaw": "^1.3",
+    "samdark/sitemap": "^2.2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Listeners\\": "listeners/"
     }
+  },
+  "scripts": {
+    "deploy": "npm run prod && git add build_production && git commit -m \"deploy: Pushing for deployment\" && git subtree push --prefix build_production origin gh-pages"
+  }
 }

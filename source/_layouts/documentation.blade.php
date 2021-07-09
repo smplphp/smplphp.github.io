@@ -10,7 +10,7 @@
             <input type="search" class="docs__sidebar-search" placeholder="Search documentation">
             <nav class="nav--docs">
 
-                @include('_partials.documentation-nav')
+                @yield('navigation')
 
             </nav>
         </aside>

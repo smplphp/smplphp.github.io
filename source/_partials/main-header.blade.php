@@ -10,10 +10,10 @@
     </div>
     <div class="header__navigation">
         <nav class="nav">
-            <a href="/" class="nav__item {{ $page->isActive('index') ? 'nav__item--active' : '' }}">Home</a>
-            <a href="/docs/components" class="nav__item {{ $page->isActive('/docs') ? 'nav__item--active' : '' }}">Documentation</a>
+            <a href="/" class="nav__item {{ $page->isActive('/', true) ? 'nav__item--active' : '' }}">Home</a>
+            <a href="/docs/current/getting-started" class="nav__item {{ $page->isActive('/docs') ? 'nav__item--active' : '' }}">Documentation</a>
             <a href="https://github.com/smplphp" class="nav__item" target="_blank">Github</a>
-            <a href="#" class="nav__item {{ $page->isActive('contact') ? 'nav__item--active' : '' }}">Contact</a>
+            {{--<a href="#" class="nav__item {{ $page->isActive('contact') ? 'nav__item--active' : '' }}">Contact</a>--}}
         </nav>
     </div>
 </header>

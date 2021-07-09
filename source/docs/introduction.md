@@ -1,10 +1,10 @@
 ---
-title: Getting Started
-description: Getting Started with the SMPL PHP framework
+title: Documentation
+description: Documentation
 extends: _layouts.documentation
 section: content
 ---
 
-# Getting Started {#getting-started}
+# Documentation {#documentation}
 
 This part of the documentation is currently under construction.
