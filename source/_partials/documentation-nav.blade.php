@@ -15,8 +15,8 @@
                         @endforeach
                     </div>
                 @else
-                    <a href="{{ $path }}"
-                       class="nav__item {{ $page->isActive($path)  ? 'nav__item--active' : '' }}">{{ $title }}</a>
+                    <a href="{{ $path['path'] }}"
+                       class="nav__item {{ $page->isActive($path['path'])  ? 'nav__item--active' : '' }}">{{ $title }}</a>
                 @endif
             @endforeach
         </div>
