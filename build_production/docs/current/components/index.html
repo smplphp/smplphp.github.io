@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Getting Started with the SMPL PHP framework">
+    <meta name="description" content="Introduction to the SMPL components">
 
     <meta property="og:site_name" content="SMPL - Simple, modern PHP framework and libraries"/>
-    <meta property="og:title" content="Getting Started | SMPL - Simple, modern PHP framework and libraries"/>
-    <meta property="og:description" content="Getting Started with the SMPL PHP framework"/>
-    <meta property="og:url" content="https://my-jigsaw-docs.com/docs/getting-started"/>
+    <meta property="og:title" content="Introduction | SMPL - Simple, modern PHP framework and libraries"/>
+    <meta property="og:description" content="Introduction to the SMPL components"/>
+    <meta property="og:url" content="https://my-jigsaw-docs.com/docs/current/components"/>
     <meta property="og:image" content="/assets/img/smpl_logo_green.png"/>
     <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     
-    <title>SMPL - Simple, modern PHP framework and libraries | Getting Started</title>
+    <title>SMPL - Simple, modern PHP framework and libraries | Introduction</title>
 
     <link rel="home" href="https://my-jigsaw-docs.com">
     <link rel="icon" href="/favicon.ico">
@@ -25,7 +25,7 @@
     
         <!-- Insert analytics code here -->
     
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=2a5e71fbe02c14d70743">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=113d530783a439116126">
 
     </head>
 
@@ -45,9 +45,9 @@
     <div class="header__navigation">
         <nav class="nav">
             <a href="/" class="nav__item ">Home</a>
-            <a href="/docs/components" class="nav__item nav__item--active">Documentation</a>
+            <a href="/docs/current/getting-started" class="nav__item nav__item--active">Documentation</a>
             <a href="https://github.com/smplphp" class="nav__item" target="_blank">Github</a>
-            <a href="#" class="nav__item ">Contact</a>
+            
         </nav>
     </div>
 </header>
@@ -57,18 +57,23 @@
             <input type="search" class="docs__sidebar-search" placeholder="Search documentation">
             <nav class="nav--docs">
 
-                <div class="nav__group">
-        <a href="/docs/components/introduction"
+                    <div class="nav__group">
+        <a href="/docs/current/getting-started"
            class="nav__title "
-        path="docs/getting-started" prefix="/docs/components/introduction">Components</a>
+           path="docs/current/components" prefix="/docs/current/getting-started">Getting Started</a>
         <div class="nav__items">
-                            <a href="/docs/components/introduction"
-                   class="nav__item ">Introduction</a>
-                            <a href="/docs/components/dependency-injection"
-                   class="nav__item ">Dependency Injection</a>
-                            <a href="/docs/components/pipelines"
-                   class="nav__item ">Pipelines</a>
-                    </div>
+                                                <a href="/docs/current/getting-started"
+                       class="nav__item ">Installation</a>
+                                    </div>
+    </div>
+    <div class="nav__group">
+        <a href="/docs/current/components"
+           class="nav__title nav__title--active"
+           path="docs/current/components" prefix="/docs/current/components">Components</a>
+        <div class="nav__items">
+                                                <a href="{&quot;path&quot;:&quot;\/docs\/current\/components\/container&quot;}"
+                       class="nav__item ">Container</a>
+                                    </div>
     </div>
 
             </nav>
@@ -76,15 +81,20 @@
 
         <section class="docs__content DocSearch-content" v-pre>
 
-            <h1 id="getting-started">Getting Started</h1>
+            <h1 id="components">Components</h1>
 
-<p>This part of the documentation is currently under construction.</p>
+<p>SMPL is made of many components, each doing a specific thing. Check out the list below to find one.</p>
+
+<h2 id="container-component"><a href="/docs/current/components/container">Container</a></h2>
+
+<p>The SMPL container component provides dependency injection using modern PHP 8 attributes, allowing you to decouple
+your classes and simplify the instantiation of objects.</p>
 
         </section>
 
     </main>
 
-    <script src="/assets/build/js/main.js?id=b3798408e081e4506539"></script>
+    <script src="/assets/build/js/main.js?id=23eb5013554e0b705d3e"></script>
 
     
 </body>
