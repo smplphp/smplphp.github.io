@@ -8,6 +8,14 @@ $breakpoints : (
     'xl' : 1200px
 ) !default;
 
+$colours     : (
+    'primary' : #00a27c,
+    'yellow' : #f4b30c,
+    'red' : #cd1919,
+    'green' : #08cf9f,
+    'purple' : #5c72b5
+);
+
 @mixin respond-to-min($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     @media(min-width : map-get($breakpoints, $breakpoint)) {
@@ -21,6 +29,18 @@ $breakpoints : (
     @media(max-width : map-get($breakpoints, $breakpoint)) {
       @content;
     }
+  }
+}
+
+@mixin colour($colour) {
+  @if map-has-key($colours, $colour) {
+    color : map-get($colours, $colour);
+  }
+}
+
+@mixin bg($colour) {
+  @if map-has-key($colours, $colour) {
+    background-color : map-get($colours, $colour);
   }
 }
 

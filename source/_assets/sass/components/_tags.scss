@@ -1,0 +1,29 @@
+.tags {
+  display         : flex;
+  flex        : {
+    direction : row;
+    grow      : 0;
+    wrap      : wrap;
+  }
+  justify-content : flex-start;
+  align-items     : start;
+  align-content   : start;
+
+  .tag {
+    display       : inline-block;
+    border-radius : 6rem;
+    padding  : {
+      left   : .8rem;
+      right  : .8rem;
+      top    : .2rem;
+      bottom : .2rem;
+    }
+    margin-right  : .4rem;
+    margin-top    : .4rem;
+    font     : {
+      size   : .8rem;
+      weight : 500;
+    }
+    flex-shrink   : 0;
+  }
+}

@@ -18,13 +18,13 @@
   }
 
   &--primary {
-    background-color : var(--inverse-bg);
-    color            : var(--inverse-text);
+    background-color : var(--inverse-bg) !important;
+    color            : var(--inverse-text) !important;
   }
 
   &--secondary {
-    background-color : var(--primary-bg);
-    color            : var(--primary-text);
-    border-color     : var(--inverse-bg);
+    background-color : var(--primary-bg) !important;
+    color            : var(--primary-text) !important;
+    border-color     : var(--inverse-bg) !important;
   }
 }

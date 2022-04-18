@@ -1,10 +1,37 @@
 .container {
-  width  : 100%;
-  margin : 0 auto;
+  width   : 100%;
+  margin  : 0 auto;
+  padding : 1rem;
 
   @each $breakpoint, $value in $breakpoints {
     @include respond-to-min($breakpoint) {
       max-width : $value;
     }
+  }
+
+  &--row {
+    display         : flex;
+    flex        : {
+      direction : row;
+      grow      : 0;
+    }
+    align-items     : start;
+    justify-content : space-between;
+
+    @include respond-to-max('lg') {
+      flex        : {
+        direction : column;
+      }
+    }
+  }
+
+  &--column {
+    display         : flex;
+    flex        : {
+      direction : column;
+      grow      : 0;
+    }
+    align-items     : start;
+    justify-content : space-between;
   }
 }

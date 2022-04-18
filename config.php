@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 return [
     'baseUrl'            => 'https://smplphp.dev',
     'production'         => false,
-    'siteName'           => 'SMPL - Simple, modern PHP framework and libraries',
+    'siteName'           => 'SMPL - Simple, modern PHP libraries',
     'siteDescription'    => '',
 
     // Algolia DocSearch credentials

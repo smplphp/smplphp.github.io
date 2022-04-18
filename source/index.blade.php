@@ -28,7 +28,7 @@
     @stack('meta')
 
     @if ($page->production)
-    <!-- Insert analytics code here -->
+        <!-- Insert analytics code here -->
     @endif
 
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
@@ -50,42 +50,201 @@
     </svg>
 
     <nav class="header__social">
-        <a href="#" class="header__social-link">
+        <a href="https://twitter.com/smplphp" target="_blank" class="header__social-link">
             <i class="fa-brands fa-twitter"></i>
         </a>
-        <a href="#" class="header__social-link">
+        <a href="https://github.com/smplphp" target="_blank" class="header__social-link">
             <i class="fa-brands fa-github"></i>
         </a>
     </nav>
 
-    <nav class="header__nav">
+    {{--<nav class="header__nav">
         <a href="#" class="header__nav-item header__nav-item--active">Home</a>
         <a href="#" class="header__nav-item">Documentation</a>
         <a href="#" class="header__nav-item">Contact</a>
-    </nav>
+    </nav>--}}
 
 </header>
 
-<section class="hero">
-    <div class="container">
+<section class="hero section section--alt">
+    <div class="container container--row">
         <div class="hero__text">
-            <h1 class="hero__text-title">Simple, modern framework and packages</h1>
+            <h1 class="hero__text-title">Simple, modern PHP libraries</h1>
             <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam.
+                Reusable components built from the ground up using modern PHP, with a focus on simplicity, while
+                maintaining a high level of flexibility.
             </p>
             <div class="hero__text-controls">
-                <a href="#" class="button button--primary">Packages</a>
-                <a href="#" class="button button--secondary">Github</a>
+                <a href="#packages" class="button button--primary">Packages</a>
+                <a href="https://github.com/smplphp" target="_blank" class="button button--secondary">Github</a>
             </div>
         </div>
 
-        <div class="hero__image" data-lottie="primary">
+        <div class="hero__image" data-lottie="primary"></div>
+    </div>
+</section>
+
+{{--<section class="section">
+    <div class="container container--row">
+        <h2 class="section__title">
+            I should put some <span class="text--underline">text</span> here, but I don't <span class="text--primary">know</span>
+            what I could <span class="text--emphasis">put</span>.
+        </h2>
+        <div class="section__text section__text--half">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
+</section>--}}
+
+<section class="section" id="about">
+    <div class="container container--row">
+        <div class="section__text text--center">
+            <h2 class="section__heading">
+                <i class="fa-solid fa-heart text--red section__heading-icon"></i>
+                A work in progress
+            </h2>
+            <p>
+                SMPL is still in its early stages of development. As it progress, so to will this site be updated
+                with information about new components, utilities and anything else worthy of note.
+            </p>
+            <p>
+                Semi-regular updates are posted to <a href="https://twitter.com/smplphp" target="_blank">twitter</a>,
+                and soon, the <a href="https://www.getrevue.co/profile/smplphp" target="_blank">revue newsletter</a>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--alt" id="packages">
+    <div class="container container--column">
+        <div class="packages">
+            <h2 class="section__heading">
+                <i class="fa-duotone fa-layer-group text--primary section__heading-icon"></i>
+                Packages
+            </h2>
+
+            <a href="https://github.com/smplphp/inspector" class="package" target="_blank">
+                <div class="package__name">Inspector</div>
+                <div class="package__description">
+                    <p>
+                        A simple, standalone, modern PHP class inspector and mapper library, wrapping PHPs native
+                        reflection in a fluent interface.
+                    </p>
+                    <div class="tags">
+                        <span class="tag bg--red">v1.1.0-alpha</span>
+                        <span class="tag bg--purple">Reflection</span>
+                        <span class="tag bg--purple">Utility</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/smplphp/container" class="package" target="_blank">
+                <div class="package__name">Container</div>
+                <div class="package__description">
+                    <p>
+                        A simple, modern PHP dependency injection container.
+                    </p>
+                    <div class="tags">
+                        <span class="tag bg--red">dev-develop</span>
+                        <span class="tag bg--purple">Dependency Injection</span>
+                        <span class="tag bg--purple">Reflection</span>
+                        <span class="tag bg--green">Inspector</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/smplphp/meta-container" class="package" target="_blank">
+                <div class="package__name">Container Meta</div>
+                <div class="package__description">
+                    <p>
+                        The meta package for the container, providing its contracts, exceptions and metadata, without
+                        requiring an implementation.
+                    </p>
+                    <div class="tags">
+                        <span class="tag bg--red">dev-develop</span>
+                        <span class="tag bg--purple">Dependency Injection</span>
+                        <span class="tag bg--purple">Meta</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/smplphp/event-bus" class="package" target="_blank">
+                <div class="package__name">Event Bus</div>
+                <div class="package__description">
+                    <p>
+                        A simple modern event bus component, following the listener/subscriber patterns.
+                    </p>
+                    <div class="tags">
+                        <span class="tag bg--red">dev-develop</span>
+                        <span class="tag bg--purple">Event Bus</span>
+                        <span class="tag bg--purple">Listener</span>
+                        <span class="tag bg--purple">Subscriber</span>
+                        <span class="tag bg--green">Inspector</span>
+                        <span class="tag bg--green">Container Meta</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/smplphp/meta-event-bus" class="package" target="_blank">
+                <div class="package__name">Event Bus Meta</div>
+                <div class="package__description">
+                    <p>
+                        The meta package for the event-bus, providing its contracts, exceptions and metadata, without
+                        requiring an implementation.
+                    </p>
+                    <div class="tags">
+                        <span class="tag bg--red">dev-develop</span>
+                        <span class="tag bg--purple">Event Bus</span>
+                        <span class="tag bg--purple">Meta</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/smplphp/collections" class="package" target="_blank">
+                <div class="package__name">Collections</div>
+                <div class="package__description">
+                    <p>
+                        A utility package providing many types of collections, from Sequences, to Maps.
+                    </p>
+                    <div class="tags">
+                        <span class="tag bg--red">dev-develop</span>
+                        <span class="tag bg--purple">Collections</span>
+                        <span class="tag bg--purple">Arrays</span>
+                        <span class="tag bg--purple">Utility</span>
+                    </div>
+                </div>
+            </a>
 
         </div>
     </div>
-
 </section>
+
+{{--<section class="section section--alt" id="about">
+    <div class="container container--column">
+        <div class="section__text">
+            <h2 class="section__heading">
+                <i class="fa-solid fa-heart text--red section__heading-icon"></i>
+                About SMPL
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+    </div>
+</section>--}}
 
 <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 

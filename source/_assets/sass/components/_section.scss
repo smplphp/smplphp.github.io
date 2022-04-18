@@ -1,0 +1,77 @@
+.section {
+  margin   : {
+    top    : 3rem;
+    bottom : 3rem;
+  }
+
+  &--alt {
+    background-color : var(--secondary-bg);
+  }
+
+  &__title {
+    font     : {
+      size   : 3.4rem;
+      weight : 700;
+    }
+    margin   : {
+      bottom : 1rem;
+      right  : 1rem;
+    }
+    line-height : 3.8rem;
+
+    @include respond-to-max('md') {
+      margin : {
+        top  : 1rem;
+      }
+    }
+
+    @include respond-to-max('lg') {
+      margin-right : 0;
+    }
+  }
+
+  &__text {
+    margin : {
+      top  : 1rem;
+      left : 1rem;
+    }
+    font     : {
+      size   : 1.4rem;
+      weight : 400;
+    }
+    line-height : 2rem;
+    width: 100%;
+
+    @include respond-to-max('lg') {
+      margin-left : 0;
+    }
+
+    @include respond-to-max('md') {
+      max-width     : 100%;
+      margin-bottom : 1rem;
+    }
+
+    &--half {
+      max-width : 50%;
+
+      @include respond-to-max('lg') {
+        width     : 100%;
+        max-width : 100%;
+      }
+    }
+  }
+
+  &__heading {
+    font     : {
+      size   : 2.4rem;
+      weight : 700;
+    }
+    margin-top    : 0;
+    margin-bottom : 2rem;
+    line-height   : 3.0rem;
+
+    &-icon {
+      margin-right : .4rem;
+    }
+  }
+}
