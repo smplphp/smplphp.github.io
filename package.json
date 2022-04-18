@@ -1,20 +1,23 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "staging": "NODE_ENV=staging mix",
-        "prod": "mix --production"
-    },
-    "devDependencies": {
-        "docsearch.js": "^2.6.3",
-        "highlight.js": "^10.7.3",
-        "laravel-mix": "^6.0.25",
-        "laravel-mix-jigsaw": "^1.5.0",
-        "postcss": "^8.3.5",
-        "resolve-url-loader": "^3.1.4",
-        "sass": "^1.35.2",
-        "sass-loader": "^10.2.0",
-        "tailwindcss": "^1.9.6"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "staging": "NODE_ENV=staging mix",
+    "prod": "mix --production"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^6.1.1",
+    "docsearch.js": "^2.6.3",
+    "highlight.js": "^10.7.3",
+    "laravel-mix": "^6.0.25",
+    "laravel-mix-jigsaw": "^1.5.0",
+    "modern-normalize": "^1.1.0",
+    "resolve-url-loader": "^3.1.4",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.2.0"
+  },
+  "dependencies": {
+    "lottie-web": "^5.9.1"
+  }
 }

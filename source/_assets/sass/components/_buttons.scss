@@ -1,0 +1,30 @@
+.button {
+  display         : inline-block;
+  text-decoration : none;
+  border   : {
+    radius : 3.2rem;
+    width  : 2px;
+    style  : solid;
+  }
+  padding  : {
+    left   : 2.2rem;
+    right  : 2.2rem;
+    top    : .8rem;
+    bottom : .8rem;
+  }
+  font     : {
+    weight : 700;
+    size   : 1.2rem;
+  }
+
+  &--primary {
+    background-color : var(--inverse-bg);
+    color            : var(--inverse-text);
+  }
+
+  &--secondary {
+    background-color : var(--primary-bg);
+    color            : var(--primary-text);
+    border-color     : var(--inverse-bg);
+  }
+}

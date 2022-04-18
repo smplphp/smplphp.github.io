@@ -1,0 +1,19 @@
+@media (prefers-color-scheme : dark) {
+  :root {
+    --primary-bg   : #201f1f;
+    --secondary-bg : #1d1c1c;
+    --primary-text : #ffffff;
+    --inverse-bg   : #ffffff;
+    --inverse-text : #000000;
+  }
+}
+
+@media (prefers-color-scheme : light) {
+  :root {
+    --primary-bg   : #ffffff;
+    --secondary-bg : #f3f3f3;
+    --primary-text : #000000;
+    --inverse-bg   : #201f1f;
+    --inverse-text : #ffffff;
+  }
+}

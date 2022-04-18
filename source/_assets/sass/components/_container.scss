@@ -1,0 +1,10 @@
+.container {
+  width  : 100%;
+  margin : 0 auto;
+
+  @each $breakpoint, $value in $breakpoints {
+    @include respond-to-min($breakpoint) {
+      max-width : $value;
+    }
+  }
+}

@@ -1,21 +1,35 @@
-body, html {
-  margin     : 0;
-  padding    : 0;
-  font     : {
-    family : 'Inter', sans-serif;
-    weight : 400;
+// Normalise all the CSS
+@import '~modern-normalize/modern-normalize.css';
+
+$breakpoints : (
+    'sm' : 576px,
+    'md' : 768px,
+    'lg' : 992px,
+    'xl' : 1200px
+) !default;
+
+@mixin respond-to-min($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media(min-width : map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
   }
-  height: 100%;
+}
+
+@mixin respond-to-max($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media(max-width : map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
 }
 
 body {
-  &, &.body--light {
-    background : #fbfbfb;
-    color      : #000000;
-  }
-
-  &.body--dark {
-    background : #000000;
-    color      : #fbfbfb;
+  background-color : var(--primary-bg);
+  color            : var(--primary-text);
+  height           : 100%;
+  font     : {
+    family : 'Inter', sans-serif;
+    weight : 400;
   }
 }

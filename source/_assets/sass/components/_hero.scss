@@ -1,0 +1,78 @@
+.hero {
+  background-color : var(--secondary-bg);
+
+  .container {
+    display         : flex;
+    flex        : {
+      direction : row;
+      grow      : 0;
+    }
+    align-items     : start;
+    justify-content : space-between;
+  }
+
+  &__text {
+    max-width   : 50%;
+    margin-top  : 1rem;
+    font     : {
+      size   : 1.4rem;
+      weight : 400;
+    }
+    line-height : 2rem;
+
+    @include respond-to-max('md') {
+      max-width     : 100%;
+      margin-bottom : 1rem;
+    }
+
+    &-title {
+      font     : {
+        size   : 3.8rem;
+        weight : 700;
+      }
+      margin   : {
+        bottom : 1rem;
+      }
+      line-height : 3.8rem;
+
+      @include respond-to-max('md') {
+        margin : {
+          top  : 1rem;
+        }
+      }
+    }
+
+    &-controls {
+      display         : flex;
+      width           : 100%;
+      flex        : {
+        direction : row;
+        shrink    : 0;
+        grow      : 0;
+      }
+      justify-content : start;
+
+      .button:not(:last-child) {
+        margin-right : 1.5rem;
+      }
+    }
+  }
+
+  &__image {
+    max-width : 50%;
+    width     : 50%;
+    padding   : 1.5rem;
+    margin   : {
+      bottom : -7rem;
+    }
+    overflow  : visible;
+
+    @include respond-to-max('md') {
+      display : none;
+    }
+  }
+
+  @include respond-to-max('sm') {
+    padding : 1rem;
+  }
+}

@@ -1,6 +1,7 @@
 .header {
   width           : 100%;
-  background      : #fbfbfb;
+  max-height      : 7.8rem;
+  height          : 7.8rem;
   display         : flex;
   flex        : {
     direction : row;
@@ -8,29 +9,101 @@
   }
   justify-content : flex-start;
   align-items     : center;
+  overflow        : hidden;
 
   &__logo {
-    display     : flex;
-    flex-shrink : 0;
-    width       : 125px;
-    height      : 115px;
-    object-fit  : cover;
+    max-height : 7.8rem;
+    height     : 7.8rem;
+    width      : auto;
+    flex     : {
+      shrink : 0;
+    }
   }
 
   &__social {
     display         : flex;
-    flex-shrink     : 0;
-    color           : #040404;
+    flex        : {
+      direction : row;
+      shrink    : 0;
+      grow      : 0;
+    }
     justify-content : space-evenly;
 
     &-link {
-      padding      : 20px;
-      margin-left : 28px;
+      font-size : 1.6rem;
+      padding   : 3rem;
+
+      &, &:visited, &:active, &:hover {
+        color : var(--primary-text);
+      }
     }
   }
 
-  &__navigation {
-    display     : flex;
-    margin-left : auto;
+  &__nav {
+    display         : flex;
+    flex   : {
+      wrap : nowrap;
+    }
+    align-items     : center;
+    justify-content : space-evenly;
+    margin-left     : auto;
+
+    &-item {
+      display         : block;
+      border-radius   : 1000rem;
+      text-decoration : none;
+      padding  : {
+        left   : 1.6rem;
+        right  : 1.6rem;
+        top    : .4rem;
+        bottom : .4rem;
+      }
+      font     : {
+        size   : 1rem;
+        weight : 400;
+        family : 'Inter', sans-serif;
+      }
+      margin          : 0 1rem;
+
+      &, &:visited, &:active, &:hover {
+        color : var(--primary-text);
+      }
+
+      &--active {
+        background  : #00a27c;
+        font-weight : 700;
+      }
+    }
+
+    @include respond-to-max('lg') {
+      display          : none;
+      width            : 100%;
+      margin-top       : 1rem;
+      background-color : var(--secondary-bg);
+      border           : 2px solid var(--primary-bg);
+      flex        : {
+        direction : column;
+      }
+
+      &-item {
+        width      : 100%;
+        margin   : {
+          left   : 1rem;
+          right  : 1rem;
+          bottom : .4rem;
+        };
+        text-align : center;
+        font-size  : 1.2rem;
+      }
+    }
+  }
+
+  @include respond-to-max('lg') {
+    flex   : {
+      wrap : wrap;
+    }
+    max-height : unset;
+    height     : unset;
+    overflow   : visible;
   }
 }

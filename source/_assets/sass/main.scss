@@ -1,14 +1,13 @@
-// Code syntax highlighting,
-// powered by https://highlightjs.org
-@import '~highlight.js/styles/a11y-light.css';
+// Themed settings
+@import "themed";
 
-// Import the basics
+// Initial base stuff
 @import "fonts";
 @import "base";
 
-// Import components
+// Components
+@import "components/container";
+@import "components/buttons";
 @import "components/header";
-@import "components/navigation";
-@import "components/content";
-@import "components/text";
-@import "components/docs";
+@import "components/hero";
+

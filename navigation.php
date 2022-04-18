@@ -1,19 +1,35 @@
 <?php
 
 return [
-    'current' => [
-        'Getting Started' => [
-            'prefix' => '/docs/current/getting-started',
-            'links'  => [
-                'Installation' => '/docs/current/getting-started',
-                //'Contributing' => '/docs/current/getting-started/contributing',
+    'main' => [
+        'current' => [
+            'Getting Started' => [
+                'prefix' => '/docs/current/getting-started',
+                'links'  => [
+                    'Installation' => 'installation',
+                    //'Contributing' => '/docs/current/getting-started/contributing',
+                ],
+            ],
+            'Components'      => [
+                'prefix' => '/docs/current/components',
+                'links'  => [
+                    'Container' => 'container',
+                    //'Pipelines'            => '/docs/current/pipelines',
+                ],
             ],
         ],
-        'Components'      => [
-            'prefix' => '/docs/current/components',
-            'links'  => [
-                'Container' => '/docs/current/components/container',
-                //'Pipelines'            => '/docs/current/pipelines',
+    ],
+
+    'components' => [
+        'inspector' => [
+            'current' => [
+                'Introduction' => [
+                    'prefix' => '/components/inspector/current/',
+                    'links'  => [
+                        'Introduction' => 'introduction',
+                        //'Contributing' => '/docs/current/getting-started/contributing',
+                    ],
+                ],
             ],
         ],
     ],

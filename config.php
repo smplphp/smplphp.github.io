@@ -3,7 +3,7 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl'            => '',
+    'baseUrl'            => 'https://smplphp.dev',
     'production'         => false,
     'siteName'           => 'SMPL - Simple, modern PHP framework and libraries',
     'siteDescription'    => '',
