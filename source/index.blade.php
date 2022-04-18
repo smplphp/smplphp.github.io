@@ -109,7 +109,7 @@
                 A work in progress
             </h2>
             <p>
-                SMPL is still in its early stages of development. As it progress, so to will this site be updated
+                SMPL is still in its early stages of development. As it progresses, so to will this site be updated
                 with information about new components, utilities and anything else worthy of note.
             </p>
             <p>
