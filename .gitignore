@@ -1,8 +1,0 @@
-/build_local/
-/node_modules/
-/vendor/
-/source/assets/build/
-npm-debug.log
-/cache/
-.env
-/torchlight_cache/
